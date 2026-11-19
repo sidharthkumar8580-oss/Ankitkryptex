@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#09090f">
+  <meta name="description" content="Ankitkryptex — private, on-device AI chat.">
+  <title>Ankitkryptex AI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <header class="top">
+      <div class="brand"><span class="logo">AK</span><div><h1>Ankit<span>kryptex</span></h1><p>PERSONAL LOCAL AI</p></div></div>
+      <span class="privacy">● ON-DEVICE</span>
+    </header>
+    <section class="hero" id="welcome">
+      <div class="orb">✦</div>
+      <h2>Your AI. Your device.</h2>
+      <p>Chat with a small open language model running in your browser. No API key and no account required.</p>
+      <div class="model-card"><span class="dot"></span><div><b>Qwen2.5 · 0.5B Instruct</b><small>Local model · WebGPU · first download about 0.5–1 GB</small></div></div>
+      <button id="loadBtn" class="primary">Load AI model</button>
+      <p class="hint">Model files download once and are cached by your browser. Wi-Fi is recommended.</p>
+    </section>
+    <section class="chat-wrap">
+      <div id="messages" class="messages" aria-live="polite">
+        <div class="empty">Your conversation will appear here.</div>
+      </div>
+      <div class="composer">
+        <textarea id="prompt" rows="1" placeholder="Message Ankitkryptex…" disabled></textarea>
+        <button id="sendBtn" aria-label="Send message" disabled>➤</button>
+      </div>
+      <div class="bottom"><span id="status">AI not loaded</span><button id="clearBtn">Clear chat</button></div>
+    </section>
+    <footer>Built by Ankit Kryptex · Experimental local AI</footer>
+  </main>
+  <script type="module" src="app.js"></script>
+</body>
+</html>
